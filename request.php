@@ -1,4 +1,5 @@
 <?php
+require 'core.php';
 require 'connect.php';
 include'header.php';
 if(isset($_POST['name'])

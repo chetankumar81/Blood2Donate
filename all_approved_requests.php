@@ -1,9 +1,9 @@
 <?php
+include 'core.php';
 include'header.php';
-echo'<h3 style="font-family:Comic sans ms;font-size:30px;margin-left:80%;margin-top:0px;">Hospital Staff</h3>';
-echo '<a href="logout.php" class="btn btn-primary" style="margin-left:80%;">Log out</a></br> ';
+echo'<h3 style="font-family:Comic sans ms;font-size:30px;margin-left:70%;margin-top:0px;">Volunteer</h3>';
 ?>
-<h2 style="color:#00cc00;font-family:Comic sans ms;font-size:30px;margin-left:10px;margin-top:0px;">Remove patient request after donation:</h2></br>
+<h2 style="color:#00cc00;font-family:Comic sans ms;font-size:30px;margin-left:10px;margin-top:0px;">Remove patient request after donation</h2></br>
 <div style="font-size:20px; margin-left:10px">
 <form action="all_approved_requests.php" method="POST">
 Patient ID: <input type=text name="id" style="font-size:25px;
@@ -19,8 +19,6 @@ Patient Name: <input type=text name="name" style="font-size:25px;
 </div>
 <?php
 require 'connect.php';
-ob_start();
-session_start();
 echo '<div style="font-size:20px;text-transform:capitalize;padding-left:20px;border-radius:10px;">';
 $current_file=$_SERVER['SCRIPT_NAME'];
 if(isset($_SERVER['HTTP_REFERER'])&&!empty($_SERVER['HTTP_REFERER']))

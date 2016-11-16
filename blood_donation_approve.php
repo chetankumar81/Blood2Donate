@@ -1,4 +1,6 @@
 <?php
+require 'core.php';
+require 'connect.php';
 include'header.php';
 echo'<h3 style="font-family:Comic sans ms;font-size:30px;margin-left:70%;margin-top:0px;">Administrator</h3>';
 echo '<a href="logout.php" class="btn btn-primary" style="margin-left:70%;">Log out</a><br><br> ';
@@ -22,9 +24,6 @@ Patient Name: <input type=text name="name" style="font-size:25px;
 </br></br>
 
 <?php
-require 'connect.php';
-ob_start();
-session_start();
 echo '<div style="font-size:20px;text-transform:capitalize;padding-left:20px;border-radius:10px;">';
 $current_file=$_SERVER['SCRIPT_NAME'];
 if(isset($_SERVER['HTTP_REFERER'])&&!empty($_SERVER['HTTP_REFERER']))

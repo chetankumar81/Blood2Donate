@@ -1,8 +1,7 @@
 <?php
+require 'core.php';
 require 'connect.php';
 include'header.php';
-ob_start();
-session_start();
 echo'<h3 style="color:black;font-family:Comic sans ms;font-size:30px;margin-left:70%;margin-top:0px;">Administrator</h3>';
 echo '<div style="font-size:20px;text-transform:capitalize;padding-left:20px;border-radius:10px;">';
 $current_file=$_SERVER['SCRIPT_NAME'];
@@ -11,7 +10,6 @@ if(isset($_SERVER['HTTP_REFERER'])&&!empty($_SERVER['HTTP_REFERER']))
 
  if(isset($_SESSION['user_id'])&& !empty($_SESSION['user_id']))
  {
- echo '<a href="logout.php" class="btn btn-primary" style="margin-left:70%;">Log out</a></br></br> ';
       if(isset($_POST['name']))
       {
         $name=$_POST['name'];

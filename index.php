@@ -1,7 +1,7 @@
 <?php
-include 'header.php';
 require 'core.php';                                         //or include.php
 require 'connect.php';
+include 'header.php';
 if(loggedin())                                               //i am right now at index, so $current_file in loginform will have value index.php
 {
 	if($_SESSION['table']== 'hospital')

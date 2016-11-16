@@ -1,10 +1,9 @@
 <?php
+	require 'core.php';
   require'connect.php';
   include'header.php';
-  echo'<h3 style="color:black;font-family:Comic sans ms;font-size:30px;margin-left:80%;margin-top:0px;">Guest Login</h3>';
-  echo '<a href="index.php" class="btn btn-primary" style="margin-left:80%;">Go Back</a> ';
   echo '<div style="font-size:20px;text-transform:capitalize;padding-left:20px;border-radius:10px;">';
-  echo'<h1>Available Donor List</h1>';
+  echo'<p><h3>Available Donor List</h3></p>';
   $query="select `firstname`,`lastname`,`mob_no` from `donor` where `bloodgroup`='".mysql_real_escape_string(@$_POST['bloodgroup'])."'";
   $query_run=mysql_query($query);
   $query_num_rows=mysql_num_rows($query_run);
