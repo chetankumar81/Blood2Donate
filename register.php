@@ -71,6 +71,7 @@ echo'Please tick the checkbox if it is okay to display your details.';
 ?>
 <div style="font-size:20px ;margin-left:50px;margin-top:50px;" >
 <form action="register.php" method="POST">
+<fieldset>
 <p><label>Firstname:</label> <input type="text" name="firstname" maxlength="40" id="a1" value="<?php if(isset($firstname)){echo $firstname;} ?>"></p>
 <p><label>Lastname:</label> <input type="text" name="lastname" maxlength="40" id="a1"  value="<?php if(isset($lastname)){echo $lastname;} ?>"></p>
 <p><label>Username:</label> <input type="text" name="username" maxlength="40" id="a1"  value="<?php if(isset($username)){echo $username;} ?>"></p>
@@ -109,6 +110,7 @@ echo'Please tick the checkbox if it is okay to display your details.';
 <p><label>Type the value you see:</label><input type="text" id="a1"  name="secure" size="6"></p>
 <p><input type="checkbox" name="checkbox" id="a1"> I authorise the website to display my telephone number so that the needy could contact me when there is an emergency.</p>
 <input type="submit" value="Register" class="btn btn-success btn-lg">
+</fieldset>
 </form>
 </div>
  <?php

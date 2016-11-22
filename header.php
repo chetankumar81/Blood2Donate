@@ -34,6 +34,9 @@
       }
       .row.content {height:auto;} 
     }
+	.navbar-header {
+    min-height: 60px;
+}
   </style>
 </head>
 <body>
@@ -45,7 +48,7 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>                        
 		  </button>
-		  <a class="navbar-brand" href="#">Logo</a>
+		  <a class="navbar-brand" href="#"><img src="logo.jpg" alt="logo" width="140" height="40"/></a>
 		</div>
 		<div class="collapse navbar-collapse" id="myNavbar">
 		  <ul class="nav navbar-nav">
